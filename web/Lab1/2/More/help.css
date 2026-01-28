@@ -28,6 +28,7 @@
     align-items: center;
     background-color: yellow;
     padding: 10px 10px;
+    border-radius: 12px;
 }
 
 .days {
@@ -39,6 +40,7 @@
     background-color: deepskyblue;
     gap: 30px;
     padding: 10px 10px;
+    border-radius: 12px;
 }
 
 .uwu {
@@ -48,6 +50,7 @@
     border: 1px solid black;
     padding: 10px 10px;
     margin-top: 10px;
+    border-radius: 12px;
 }
 
 .block {
@@ -57,6 +60,7 @@
     padding: 10px;
     gap: 10px;
     width: 300px;
+    border-radius: 12px;
 
 }
 
