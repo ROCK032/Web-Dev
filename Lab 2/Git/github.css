@@ -250,7 +250,82 @@ body{
     font-weight: bold;
     font-size: 20px;
 }
+.additional{
+    text-align: center;
+    font-size: 60px;
+}
+.circle{
+    width:40px;
+    height:40px;
+    background:#800080;
+    border-radius:50%;
+}
+.ons{
+    display:flex;
+    /*gap:30px;*/
+    padding:20px;
+    justify-content: space-around;
+}
 
+.omg{
+    width:400px;
+    padding:25px;
+    background:white;
+    border-radius:14px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.06);
+    transition: all 0.35s ease;
+}
+
+.omg:hover{
+    transform: translateY(-12px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+.omg a{
+    text-decoration: none;
+    color: black;
+    font-weight: initial;
+    font-size: 18px;
+}
+.omg a::after{
+    content: ">";
+    padding-left: 3px;
+}
+.omg a:hover::after{
+    content: "->";
+    padding-left: 5px;
+    transition: all 0.35s ease;
+}
+.omg p{
+    color: gray;
+    font-size: 15px;
+}
+.ez{
+    display: flex;
+    justify-content: space-between;
+}
+.ez button{
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+}
+.models{
+    background-color: green;
+}
+.security{
+    background-color: blue;
+}
+.codes{
+    background-color: #F19CBB;
+}
+.support{
+    background-color: orange;
+}
+.file{
+    background-color: yellow;
+}
 @media (max-width: 768px){
 
     .navbar{
@@ -300,6 +375,22 @@ body{
     .number{
         font-size: 40px;
     }
+    .buy{
+        flex-direction:column;
+    }
+
+    .container h1{
+        font-size:42px;
+    }
+
+    .omg{
+        width:45%;
+    }
+    .ons{
+        flex-direction: column;
+        gap: 10px;
+        width: 200%;
+    }
 }
 
 @media (max-width: 480px){
@@ -327,4 +418,23 @@ body{
     .number{
         font-size: 35px;
     }
+    .omg{
+        width:100%;
+    }
+
+    .container h1{
+        font-size:30px;
+    }
+
+    button{
+        width:100%;
+    }
+    .ons{
+        gap:20px;
+        padding:10px;
+        display: block;
+        flex-direction:column;
+        width: 100%;
+    }
 }
+
