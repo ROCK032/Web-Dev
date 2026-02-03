@@ -1,0 +1,330 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body{
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.logo{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.logo a:hover{
+    color: gray;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu form {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.menu form input {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+}
+
+.in {
+    border: none;
+    background-color: white;
+}
+
+.in:hover {
+    color: gray;
+}
+
+.up{
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.up:hover{
+    color: gray;
+}
+
+.container{
+    text-align: center;
+    padding: 50px;
+}
+
+.container h1{
+    font-size: 70px;
+}
+
+.container p{
+    font-size: 25px;
+    color: #57606A;
+}
+
+.container button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 230px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container button:hover{
+    background-color: #24292F;
+}
+
+.buy{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.info{
+    text-align: center;
+}
+
+.info p{
+    color: #57606A;
+}
+
+.money {
+    font-size: 20px;
+}
+
+.money span {
+    font-weight: bold;
+    color: black;
+}
+
+.number {
+    font-size: 50px;
+}
+
+.price1{
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+}
+
+.price1 button{
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.price1 button:hover{
+    border: 2px solid black;
+}
+
+.price2{
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+}
+
+.price3{
+    position: relative;
+    border: 10px solid blue;
+    border-block-start: 35px solid blue;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+}
+
+.price2 button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.price2 button:hover{
+    background-color: #24292F;
+}
+
+.price3 button{
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.black{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.black:hover{
+    background-color: #24292F;
+}
+
+.white{
+    background-color: white;
+    border: 1px solid gainsboro;
+}
+
+.white:hover{
+    border: 2px solid #24292F;
+}
+
+.accordion{
+    padding-top: 20px;
+    color: gray;
+}
+
+.more{
+    color: #166fe5;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.accordion a{
+    color: #166fe5;
+}
+
+.accordion a:visited{
+    color: #166fe5;
+}
+
+.kick::before{
+    content: "←";
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.uwu{
+    border: 1px solid gainsboro;
+    color: gray;
+    background-color: white;
+}
+
+.recommended{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 0px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu form{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu form input{
+        width: 200px;
+    }
+
+    .container{
+        padding: 30px;
+    }
+
+    .container h1{
+        font-size: 40px;
+    }
+
+    .container p{
+        font-size: 18px;
+    }
+
+    .buy{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .price1,
+    .price2,
+    .price3{
+        width: auto;
+    }
+
+    .number{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .container{
+        padding: 20px;
+    }
+
+    .container h1{
+        font-size: 32px;
+    }
+
+    .container button{
+        width: 100%;
+    }
+
+    .menu form input{
+        width: 100%;
+    }
+
+    .price3 button{
+        width: 100%;
+    }
+
+    .number{
+        font-size: 35px;
+    }
+}
