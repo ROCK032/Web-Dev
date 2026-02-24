@@ -1,0 +1,16 @@
+<h1>Товары</h1>
+
+<div class="grid">
+  <div *ngFor="let product of filteredProducts()" class="phone">
+    <img [src]="product.image" [alt]="product.name" width="260" height="300">
+    <hr>
+    <a href="#" class="info">{{product.name}}</a>
+    <p class="rating">
+      Рейтинг:
+      <span *ngFor="let star of stars">
+    {{ star <= Math.round(product.rating) ? '⭐' : '☆' }}
+  </span>
+    </p>
+    <strong class="price">Цена: {{product.price}} ₸</strong>
+  </div>
+</div>
