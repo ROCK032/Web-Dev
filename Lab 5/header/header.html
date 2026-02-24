@@ -1,0 +1,28 @@
+<header class="header">
+  <div class="container">
+    <div class="logo">Kaspi.kz</div>
+    <nav class="nav">
+      <ul class="info">
+        <li><a href="/">Главная страница</a></li>
+        <li><a href="/about">О нас</a></li>
+      </ul>
+      <select (change)="onChange($any($event.target).value)">
+        <option value="">All</option>
+
+        @for (cat of categories(); track cat.id) {
+          <option [value]="cat.id">
+            {{ cat.name }}
+          </option>
+        }
+      </select>
+      <input
+        type="text"
+        placeholder="Искать"
+        [(ngModel)]="searchTitle"
+        (input)="search()"
+        [disabled]="router.url !== '/'"
+        class="search"
+        >
+    </nav>
+  </div>
+</header>

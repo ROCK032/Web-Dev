@@ -1,0 +1,22 @@
+.about {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.about h2 {
+  color: #e60023;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}

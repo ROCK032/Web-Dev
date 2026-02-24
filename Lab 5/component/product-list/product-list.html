@@ -1,0 +1,11 @@
+<h1>Товары</h1>
+
+<div class="grid">
+  @for (product of filteredProducts(); track product.id) {
+    <app-product-item
+      [product]="product"
+      (delete)="onDelete($event)"
+      (like)="onLike($event)">
+    </app-product-item>
+  }
+</div>

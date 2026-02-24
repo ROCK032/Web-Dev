@@ -1,0 +1,20 @@
+<div class="card">
+  <img [src]="product().image" [alt]="product().name" class="main-img">
+  <h3>{{product().name}}</h3>
+  <hr>
+  <p class="desc">{{product().description}}</p>
+  <p class="price"> {{product().price}} ₸</p>
+  <div class="rating">
+    @for (star of stars; track star){
+      <span>
+        {{star <= product().rating ? '⭐' : '☆'}}
+      </span>
+    }
+  </div>
+  <p class="likes">❤️ {{product().likes}}</p>
+  <div class="action">
+    <button (click)="onLike()">Like</button>
+    <button (click)="onDelete()">Delete</button>
+    <button (click)="share()">Share</button>
+  </div>
+</div>

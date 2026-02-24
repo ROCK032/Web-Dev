@@ -1,0 +1,29 @@
+h1{
+  text-align: center;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.phone {
+  width: 300px;
+  border: 1px solid black;
+  height: 450px;
+
+}
+
+.info {
+  display: block;
+  text-align: center;
+  color: #0089d0;
+  text-decoration: none;
+}
+.rating{
+  padding-left: 10px;
+}
+.price{
+  padding-left: 10px;
+}
